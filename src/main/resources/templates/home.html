@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Segurança Web</title>
+
+    <div th:replace="fragments/header :: header-css"/>
+
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"/>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>Segurança Web com Spring Security</h1>
+        <h2>-Login como Admin <a th:href="@{/admin}">Página do Admin 'necessita de permissão de admin'</a></h2>
+        <h2>-Login como Usuário <a th:href="@{/user}">Página do Usuário 'necessita de permissão de usuário'</a></h2>
+        <h2>- Navegar sem login <a th:href="@{/about}">Página pública 'não necessita de permissão'</a></h2>
+    </div>
+
+</div>
+<!-- /.container -->
+
+<div th:replace="fragments/footer :: footer"/>
+
+</body>
+</html>
